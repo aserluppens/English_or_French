@@ -1,0 +1,16 @@
+n = int(input())
+
+total_t = 0
+total_s = 0
+
+for i in range(0,n):
+    text = input().upper()
+    T = text.count('T')
+    S = text.count('S')
+    total_s += S
+    total_t += T
+    
+if total_t > total_s :
+    print('English')
+else:
+    print('French')
